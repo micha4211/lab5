@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-    <h1>Lab 6</h1>
+    <h1>Connecting to Coin Lore Api</h1>
     <input
         placeholder="start"
         onChange={e => updateInputValues('start', e.target.value)}
