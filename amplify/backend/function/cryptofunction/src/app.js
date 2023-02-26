@@ -6,9 +6,6 @@ or in the "license" file accompanying this file. This file is distributed on an 
 See the License for the specific language governing permissions and limitations under the License.
 */
 
-
-
-
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
@@ -33,9 +30,9 @@ app.use(function(req, res, next) {
 
 app.get('/coins', function(req, res) {
   const coins = [
-    { name: 'Bitcoin', symbol: 'BTC', price_usd: "10000"},
-    { name: 'Ethereum', symbol: 'ETH', price_usd: "400"},
-    { name: 'Litecoin', symbol: 'LTC', price_usd: "150"}
+    { name: 'Bitcoin', symbol: 'BTC', price_usd: "10000" },
+    { name: 'Ethereum', symbol: 'ETH', price_usd: "400" },
+    { name: 'Litecoin', symbol: 'LTC', price_usd: "150" }
   ]
   res.json({
     coins
